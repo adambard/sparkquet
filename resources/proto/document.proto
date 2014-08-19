@@ -1,0 +1,14 @@
+package sparkquet;
+
+message MyDocument {
+    enum Category {
+        THINGS = 1;
+        STUFF = 2;
+        CRAP = 3;
+    }
+    required string id = 1;
+    required string name = 2;
+    required string description = 3;
+    required Category category = 4;
+    required uint64 created = 5;
+}
